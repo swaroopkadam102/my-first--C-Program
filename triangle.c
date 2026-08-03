@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    float base = 10.0;    // त्रिकोणाचा पाया
-    float height = 5.0;   // त्रिकोणाची उंची
-    float area;
+    float base, height, area;
 
-    // क्षेत्रफळ काढण्याचे सूत्र
+    // युझरला इनपुट टाकायला सांगणे
+    printf("Enter Base of Triangle: ");
+    scanf("%f", &base); // युझरने टाकलेली व्हॅल्यू base मध्ये सेव्ह होईल
+
+    printf("Enter Height of Triangle: ");
+    scanf("%f", &height); // युझरने टाकलेली व्हॅल्यू height मध्ये सेव्ह होईल
+
+    // क्षेत्रफळ काढणे
     area = 0.5 * base * height;
 
-    // आउटपुट प्रिंट करणे
-    printf("Base = %.2f\n", base);
-    printf("Height = %.2f\n", height);
+    // निकाल प्रिंट करणे
     printf("Area of Triangle = %.2f\n", area);
 
     return 0;
